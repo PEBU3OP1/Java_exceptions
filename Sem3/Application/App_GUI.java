@@ -71,6 +71,14 @@ public class App_GUI {
     }
 
 
+
+
+
+
+    /*
+     * Func bday searching for Date bday_date, else it returns Application.App_GUI.Birthday_Exception mistake
+     * */
+
     public ArrayList<String> bday(String[] lst) throws Birthday_Exception {
         ArrayList<String> new_lst = new ArrayList<>();
         Date bday_date = null;
@@ -93,6 +101,15 @@ public class App_GUI {
         return new_lst;
     }
 
+
+
+
+
+
+    /*PHONE
+     *  Func phonenumber searching for Long phone number, else it returns Phonenumber mistake
+     * */
+
     public ArrayList<String> phonenumber(ArrayList<String> phone_searching) throws Wrong_phone_error {
         ArrayList<String> new_lst = new ArrayList<>();
         Long phone = null;
@@ -111,6 +128,13 @@ public class App_GUI {
         Phone.setText(phone.toString());
         return new_lst;
     }
+
+
+
+
+    /*Gender:
+     *   Func gender searching for String equals f or m, else it returns Gender_mistake
+     * */
 
     public ArrayList<String> gender(ArrayList<String> gender_search) throws Wrong_Gender_Error {
         ArrayList<String> new_lst = new ArrayList<>();
